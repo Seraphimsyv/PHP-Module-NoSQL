@@ -9,7 +9,7 @@
         public function __construct(string $database_file_name)
         {
             $this->file = $database_file_name;
-            $this->file_manager = new \No_SQL\Types\File($database_file_name);
+            $this->file_manager = new \No_SQL\Classes\File_Manager($database_file_name);
             foreach(json_decode($this->file_manager->get(), true)['collections'] as $title => $data)
             {
                 $this->collections[$title] = new \No_SQL\Types\Collection($title, $data);

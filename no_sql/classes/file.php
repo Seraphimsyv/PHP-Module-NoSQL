@@ -1,8 +1,8 @@
 <?php
 
-    namespace No_SQL\Types;
+    namespace No_SQL\Classes;
 
-    class File 
+    class File_Manager
     {
         public string $file;
         public int $file_size;
