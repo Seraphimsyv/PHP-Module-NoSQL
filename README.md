@@ -34,11 +34,13 @@ $obj->save();
 #### Getting documents
 <p>
 Requests for obtaining documents are made in the format of a nested list
+</p>
+
 ````
 $query_title = ["title", "==", "Test title"];
 $query_category = ["category", "==", "Test category" ];
 ````
-</p>
+
 `````
 $obj = new \NoSQL\Classes\SQL_Manager("@file_name@.json");
 $collection = $obj->collections("@collection_name@");
